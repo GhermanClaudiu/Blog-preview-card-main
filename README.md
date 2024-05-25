@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://www.frontendmentor.io/solutions/social-links-profile-YfsamhdcYx)
-- Live Site URL: (https://ghermanclaudiu.github.io/Social-Links-Profile/)
+- Solution URL: (https://github.com/GhermanClaudiu/Blog-preview-card-main.git)
+- Live Site URL: (https://ghermanclaudiu.github.io/Blog-preview-card-main/)
 
 ## My process
 
