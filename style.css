@@ -43,7 +43,7 @@ body {
   justify-content: flex-start;
   flex-direction: column;
   gap: 24px;
-  border: 1px solid var(--black);
+  border: 1px solid var(--Black);
   border-radius: 20px;
   padding: 24px;
   width: 327px;
@@ -52,11 +52,18 @@ body {
   background: var(--White);
 }
 .blogImage {
-  border-radius: 10px;
-  width: 279px;
   height: 200px;
-  fill: var(--yellow);
+  width: 100%;
+  fill: var(--Yellow);
+  border-radius: 10px;
+  overflow: hidden;
 }
+.blogImage img {
+  width: 100%; /* Face ca imaginea să umple lățimea containerului */
+  height: 100%; /* Face ca imaginea să umple înălțimea containerului */
+  object-fit: cover; /* Controlează modul în care imaginea este redimensionată pentru a umple containerul */
+}
+
 .content {
   display: flex;
   align-items: flex-start;
@@ -75,6 +82,13 @@ body {
   width: 82px;
   height: 29px;
   background: var(--Yellow);
+}
+
+.category p {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 150%;
 }
 .published {
   font-family: var(--font-family);
@@ -103,7 +117,7 @@ body {
   justify-content: flex-start;
   flex-direction: row;
   gap: 12px;
-  width: 129px;
+  width: 145px;
   height: 32px;
 }
 .author img {
@@ -114,7 +128,7 @@ body {
 .authorName {
   font-family: var(--font-family);
   font-weight: 800;
-  font-size: 10px;
+  font-size: 14px;
   line-height: 150%;
   color: var(--black);
 }
@@ -150,5 +164,9 @@ body {
   /* specific for desktop */
   .app {
     max-width: 1440px;
+  }
+  .card {
+    width: 384px;
+    height: 522px;
   }
 }
